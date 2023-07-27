@@ -1,0 +1,12 @@
+version: '3.8'
+services:
+  service1:
+    build:
+      dockerfile: dockerfile.dev
+      context: ./service1
+    ports:
+      - 3000:3000
+    volumes:
+      - ./service1:/app
+      - /app/node_modules
+    # command: yarn dev
