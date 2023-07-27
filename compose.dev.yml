@@ -9,4 +9,3 @@ services:
     volumes:
       - ./service1:/app
       - /app/node_modules
-    # command: yarn dev
